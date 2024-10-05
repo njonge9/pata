@@ -13,7 +13,7 @@
     </div>
     <navbar-menu class="navbar-menu" data-navbar-target="menu">
         <div class="navbar-start">
-            <%= link_to "Create Ad", "#", class: "navbar-item" %>
+            <%= link_to "Create Ad", new_listing_path, class: "navbar-item" %>
             <%= link_to "Messages", "#", class: "navbar-item" if user_signed_in? %>
         </div>
 
