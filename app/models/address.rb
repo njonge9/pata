@@ -1,4 +1,6 @@
 class Address < ApplicationRecord
+    include PermittedAttributes
+    
     belongs_to :addressable, polymorphic: true
 
     validates :line_1, presence: true
