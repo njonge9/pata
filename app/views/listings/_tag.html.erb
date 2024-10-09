@@ -1,0 +1,13 @@
+<%form = local_assigns[:form] %>
+
+<ui-tag class="control tags has-addons">
+    <%= tag.span class: "tag is-primary" do %>
+        #<%= value %>
+    <% end %>
+</ui-tag>
+
+<% if form.present? %>
+    <%= form.fields_for(:tags) do |fields| %>
+        <%= fields.hidden_field nil, id: nil, value: value %>
+    <% end %>
+<% end %>
