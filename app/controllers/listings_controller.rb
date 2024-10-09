@@ -30,6 +30,7 @@ class ListingsController < ApplicationController
   end
 
   def show
+    @listings = Listing.feed.first(10)
   end
 
   def edit
