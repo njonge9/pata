@@ -5,6 +5,7 @@ class ListingsController < ApplicationController
   def new
     @listing = Listing.new
     @organizations = current_user.organizations
+    @listing.build_address
   end
 
   def create
