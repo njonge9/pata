@@ -19,10 +19,16 @@
                 </dl>
                 <layout-group class="buttons mt-6">
                     <%= button_to "#", class:"button is-secondary is-medium" do%>
-                        <%= t(".save") %>
+                        <%= svg "heart", class: "icon is-small mr-3"%>
+                        <span>
+                            <%= t(".save") %>
+                        </span>
                     <% end %>
                     <%= link_to "#", class: "button is-primary is-medium" do%>
-                        <%= t(".contact") %>
+                        <%= svg("message", class: "icon is-small mr-3", fill: "#fff")%>
+                        <span>
+                            <%= t(".contact") %>
+                        </span>
                     <% end %>
                 </layout-group>
             </layout-column>
