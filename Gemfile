@@ -62,3 +62,4 @@ gem "devise", "~> 4.9"
 gem 'premailer', '~> 1.15'
 gem "omniauth", "~> 2.1"
 gem "letter_opener", "~> 1.8"
+gem "iso_country_codes"
