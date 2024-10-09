@@ -12,3 +12,7 @@ en:
     edit:
       publish: Update ad
       delete: Delete
+    update:
+      sucess: Your ad has been updated!
+    destroy:
+      sucess: Your ad has been deleted!
