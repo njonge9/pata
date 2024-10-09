@@ -113,6 +113,8 @@ GEM
       warden (~> 1.2.3)
     drb (2.2.1)
     erubi (1.13.0)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
@@ -328,6 +330,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise (~> 4.9)
+  faker
   iso_country_codes
   jbuilder
   jsbundling-rails
