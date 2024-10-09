@@ -16,6 +16,7 @@ class Listing < ApplicationRecord
 
     before_save :downcase_tags
 
+    
     private 
     
     def downcase_tags

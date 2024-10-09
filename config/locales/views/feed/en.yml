@@ -1,0 +1,5 @@
+en:
+  feed:
+    show:
+      welcome: Welcome to Pata
+      welcome_with_name: Welcome to Pata, %{name}
