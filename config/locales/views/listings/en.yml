@@ -9,3 +9,6 @@ en:
       edit: Edit
       contact: Send Message
       save: Save this ad
+    edit:
+      publish: Update ad
+      delete: Delete
