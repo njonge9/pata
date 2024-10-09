@@ -19,6 +19,13 @@
             </p>
           </form-field>
         </form-field>
+
+        <form-field class="field">
+          <%= form.label :condition, class: "label"%>
+          <div class="select is-fullwidth">
+            <%= form.select :condtion, Listing.human_enum_options(:condition)%>
+          </div>
+        </form-field>
       </div>
     </layout-column>
 
