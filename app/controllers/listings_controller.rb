@@ -23,7 +23,7 @@ class ListingsController < ApplicationController
       
       redirect_to listing_path(@listing), flash: {success: t(".sucess")}, status: :see_other
     else
-      Rails.logger.debug "Listing creation failed: #{@listing.errors.full_messages.join(', ')}"
+      # Rails.logger.debug "Listing creation failed: #{@listing.errors.full_messages.join(', ')}"
       render :new, status: :unprocessable_entity
     end
   end
@@ -35,9 +35,16 @@ class ListingsController < ApplicationController
   end
 
   def update
+    if @listing.update(listing_params)
+      redirect_to listing_path(@listing), status: :see_other, flash: { sucess: t(".sucess")}
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
+    @listing.destroy
+    redirect_to rooth_path, status: :see_other, flash: { sucess: t(".sucess")}
   end
 
   private
