@@ -19,4 +19,9 @@ module HumanEnum
             end.to_h
         end
     end
+
+    def human_enum_value(enum_name)
+        enum_value = send(enum_name)
+        self.class.human_enum_name(enum_name, enum_value)
+    end
 end
