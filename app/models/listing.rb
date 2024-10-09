@@ -10,4 +10,5 @@ class Listing < ApplicationRecord
     validates :title, length: { in: 1..100 }
     validates :price, numericality: { only_integer: true}
     validates :condition, presence: true
+    validates :tags, length: { in: 1..5 }
 end
