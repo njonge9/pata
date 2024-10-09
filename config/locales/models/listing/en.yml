@@ -3,7 +3,7 @@ en:
     attributes:
       listing:
         conditions:
-          mint: new
+          mint: New
           near_mint: As good as new
           used: Used
           defective: Defective

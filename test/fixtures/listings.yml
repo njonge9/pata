@@ -1,9 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  price: 1
+<% 10.times do |n| %>
+  auto_listing_<%= n %>_jerry:
+    creator: jerry
+    organization: jerry
+    title: "Nice and cool Jacket"
+    price: 3000
+    condition: "mint"
+<% end %>
 
-two:
-  title: MyString
-  price: 1
+<% 10.times do |n| %>
+  auto_listing_<%= n %>_fred:
+    creator: fred
+    organization: fred
+    title: "Nice,cool and red Jackets"
+    price: 3000
+    condition: "used"
+<% end %>
