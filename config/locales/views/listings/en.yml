@@ -2,3 +2,10 @@ en:
   listings:
     new:
       publish: Publish ad
+    create:
+      sucess: Your ad has been published!
+    show:
+      posted_by: Posted by
+      edit: Edit
+      contact: Send Message
+      save: Save this ad

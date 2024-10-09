@@ -19,7 +19,7 @@
 
         <div class="navbar-end">
             <%= tag.div class: "navbar-item has-dropdown is-hoverable mr-4" do %>
-                <%= link_to current_user.email, "#", class: "navbar-link" %>
+                <%= link_to current_user.name, "#", class: "navbar-link" %>
 
                 <div class="navbar-dropdown is-right">
                     <%= link_to "Profile", edit_user_registration_path, class: "navbar-item" %>

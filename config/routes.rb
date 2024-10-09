@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controlers: {
+    registrations: 'users/registrations'
+  }
 
   resources :listings, except: :index
   
