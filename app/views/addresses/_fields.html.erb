@@ -23,7 +23,7 @@
     <form-field class="field">
         <%= fields.label :country, class: "label" %>
         <div class="select is-fullwidth">
-            <%= fields.select :country, {}, options_for_select(IsoCountryCodes.for_select, "KEN"), diasbled: true %>
+            <%= fields.select :country, options_for_select(IsoCountryCodes.for_select, "KEN"), {} %>
         </div>
     </form-field>
 
