@@ -1,0 +1,17 @@
+<form-field class="field">
+    <%= form.label :tags, class: "label" %>
+    <p class="has-text-weight-medium has-text-grey is-italic mb-2">
+        <%= t(".description")%>
+    </p>
+
+    <form-field class="field is-grouped">
+        <div class="control is-expanded">
+            <%= text_field_tag nil, nil, class: "input">
+        </div>
+        <div class="control">
+            <button class="button is-info" type="button">
+                <%= t(".add_tag")%>
+            </button>
+        </div>
+    </form-field>
+</form-field>
