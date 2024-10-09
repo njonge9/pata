@@ -21,6 +21,10 @@
         </div>
     </form-field>
 
+    <%= tag.p class: "help is-danger" do%>
+        <%= form.object.errors.messages_for(:tags).to_sentence %>
+    <% end if form.object.errors.include?(:tags) %>
+
     <template data-tags-target="template">
         <%= render "tag", value: "{value}", form: form %>
     </template>

@@ -4,11 +4,11 @@
     <%= tag.span class: "tag is-primary" do %>
         #<%= value %>
     <% end %>
-</ui-tag>
-
-<% if form.present? %>
-    <%= form.fields_for(:tags) do |fields| %>
-        <%= fields.hidden_field nil, id: nil, value: value %>
+    
+    <% if form.present? %>
+        <%= form.fields_for(:tags) do |fields| %>
+            <%= fields.hidden_field nil, id: nil, value: value %>
+        <% end %>
+        <%= tag.a class: "tag is-primary is-delete", data: { action: "remove-element#remove" }%>
     <% end %>
-    <%= tag.a class: "tag is-primary is-delete", data: { action: "remove-element#remove"}%>
-<% end %>
+</ui-tag>
