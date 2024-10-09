@@ -16,6 +16,7 @@ class Listing < ApplicationRecord
 
     before_save :downcase_tags
 
+    scope :feed, -> { order(created_at: :desc).includes(:address) }
     
     private 
     
@@ -23,5 +24,4 @@ class Listing < ApplicationRecord
         self.tags = tags.map(&:downcase)
     end
     
-    scope :feed, -> { order(created_at: :desc) }
 end
