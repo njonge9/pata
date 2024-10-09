@@ -8,4 +8,10 @@ class Address < ApplicationRecord
     validates :city, presence: true
     validates :postcode, presence: true
     validates :country, presence: true
+
+    attribute :country, default: "KEN"
+
+    def redacted
+        "#{city}, #{postcode}"
+    end
 end
