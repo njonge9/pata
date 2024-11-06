@@ -64,4 +64,4 @@ gem "omniauth", "~> 2.1"
 gem "letter_opener", "~> 1.8"
 gem "iso_country_codes", "~> 0.7.8"
 gem 'faker'
-gem "pagy", "~> 5.10"
+gem "pagy", "~> 9.2"
