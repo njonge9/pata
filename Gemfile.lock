@@ -179,8 +179,7 @@ GEM
       rack (>= 2.2.3)
       rack-protection
     orm_adapter (0.5.0)
-    pagy (5.10.1)
-      activesupport
+    pagy (9.2.2)
     parallel (1.26.3)
     parser (3.3.5.0)
       ast (~> 2.4.1)
@@ -282,7 +281,7 @@ GEM
       rubocop-rails
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
-    securerandom (0.3.1)
+    securerandom (0.3.2)
     selenium-webdriver (4.25.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -338,7 +337,7 @@ DEPENDENCIES
   jsbundling-rails
   letter_opener (~> 1.8)
   omniauth (~> 2.1)
-  pagy (~> 5.10)
+  pagy (~> 9.2)
   pg (~> 1.1)
   premailer (~> 1.15)
   propshaft
